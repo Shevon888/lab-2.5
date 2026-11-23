@@ -3,12 +3,12 @@
 
 #include <stddef.h>
 
+//варіант 2//
 typedef struct Node {
     float data;
     struct Node *next;
 } Node;
 
-/* Відкрита підпрограма: перевірка на нерівність нулю вказівника на наступний елемент */
 static inline int has_next(const Node *current) {
     return current != NULL && current->next != NULL;
 }
